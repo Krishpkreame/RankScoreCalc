@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StudentResultsResults apiversion="4.03.001" portalversion="2022.08.001">
+<AccessLevel>1</AccessLevel>
+<ErrorCode>0</ErrorCode>
+<NumberRecords>80</NumberRecords>
+<NumberResultLevels>3</NumberResultLevels>
+<StudentID>18119</StudentID>
+<ResultLevels><ResultLevel index="1"><NumberResults>17</NumberResults>
+<NCEALevel>3</NCEALevel>
+<Results><Result index="1"><Number>91461</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Health 3.1 - Analyse a New Zealand health issue</Title>
+<SubField>Health and Physical Education</SubField>
+<Credits>5</Credits>
+<CreditsPassed>5</CreditsPassed>
+<ResultPublished>2022-07-29</ResultPublished>
+</Result>
+<Result index="2"><Number>91463</Number>
+<Version>2</Version>
+<Grade>Achieved</Grade>
+<Title>Health 3.3 - Evaluate health practices currently used in New Zealand</Title>
+<SubField>Health and Physical Education</SubField>
+<Credits>5</Credits>
+<CreditsPassed>5</CreditsPassed>
+<ResultPublished>2022-05-17</ResultPublished>
+</Result>
+<Result index="3"><Number>91573</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Mathematics and Statistics 3.1 - Apply the geometry of conic sections in solving problems</Title>
+<SubField>Mathematics</SubField>
+<Credits>3</Credits>
+<CreditsPassed>3</CreditsPassed>
+<ResultPublished>2021-07-05</ResultPublished>
+</Result>
+<Result index="4"><Number>91574</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Mathematics and Statistics 3.2 - Apply linear programming methods in solving problems</Title>
+<SubField>Mathematics</SubField>
+<Credits>3</Credits>
+<CreditsPassed>3</CreditsPassed>
+<ResultPublished>2019-06-13</ResultPublished>
+</Result>
+<Result index="5"><Number>91575</Number>
+<Version>2</Version>
+<Grade>Achieved</Grade>
+<Title>Mathematics and Statistics 3.3 - Apply trigonometric methods in solving problems</Title>
+<SubField>Mathematics</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2020-06-02</ResultPublished>
+</Result>
+<Result index="6"><Number>91577</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Mathematics and Statistics 3.5 - Apply the algebra of complex numbers in solving problems</Title>
+<SubField>Mathematics</SubField>
+<Credits>5</Credits>
+<CreditsPassed>5</CreditsPassed>
+<ResultPublished>2020-03-06</ResultPublished>
+</Result>
+<Result index="7"><Number>91578</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Mathematics and Statistics 3.6 - Apply differentiation methods in solving problems</Title>
+<SubField>Mathematics</SubField>
+<Credits>6</Credits>
+<CreditsPassed>6</CreditsPassed>
+<ResultPublished>2021-02-26</ResultPublished>
+</Result>
+<Result index="8"><Number>91579</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Mathematics and Statistics 3.7 - Apply integration methods in solving problems</Title>
+<SubField>Mathematics</SubField>
+<Credits>6</Credits>
+<CreditsPassed>6</CreditsPassed>
+<ResultPublished>2021-02-26</ResultPublished>
+</Result>
+<Result index="9"><Number>91587</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Mathematics and Statistics 3.15 - Apply systems of simultaneous equations in solving problems</Title>
+<SubField>Mathematics</SubField>
+<Credits>3</Credits>
+<CreditsPassed>3</CreditsPassed>
+<ResultPublished>2021-03-30</ResultPublished>
+</Result>
+<Result index="10"><Number>91416</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Making Music 3.1 - Perform two programmes of music as a featured soloist</Title>
+<SubField>Music</SubField>
+<Credits>8</Credits>
+<CreditsPassed>8</CreditsPassed>
+<ResultPublished>2022-08-30</ResultPublished>
+</Result>
+<Result index="11"><Number>91418</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Making Music 3.3 - Demonstrate ensemble skills by performing two substantial pieces of music as a member of a group</Title>
+<SubField>Music</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2022-08-11</ResultPublished>
+</Result>
+<Result index="12"><Number>91422</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Music Studies 3.7 - Analyse a substantial music work</Title>
+<SubField>Music</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2022-06-27</ResultPublished>
+</Result>
+<Result index="13"><Number>91424</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Music Studies 3.9 - Create two arrangements for an ensemble</Title>
+<SubField>Music</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2022-04-08</ResultPublished>
+</Result>
+<Result index="14"><Number>91388</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Chemistry 3.2 - Demonstrate understanding of spectroscopic data in chemistry</Title>
+<SubField>Science</SubField>
+<Credits>3</Credits>
+<CreditsPassed>3</CreditsPassed>
+<ResultPublished>2022-08-22</ResultPublished>
+</Result>
+<Result index="15"><Number>91393</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Chemistry 3.7 - Demonstrate understanding of oxidation-reduction processes</Title>
+<SubField>Science</SubField>
+<Credits>3</Credits>
+<CreditsPassed>3</CreditsPassed>
+<ResultPublished>2022-03-22</ResultPublished>
+</Result>
+<Result index="16"><Number>91602</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Biology 3.2 - Integrate biological knowledge to develop an informed response to a socio-scientific issue</Title>
+<SubField>Science</SubField>
+<Credits>3</Credits>
+<CreditsPassed>3</CreditsPassed>
+<ResultPublished>2022-04-01</ResultPublished>
+</Result>
+<Result index="17"><Number>91604</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Biology 3.4 - Demonstrate understanding of how an animal maintains a stable internal environment</Title>
+<SubField>Science</SubField>
+<Credits>3</Credits>
+<CreditsPassed>3</CreditsPassed>
+<ResultPublished>2022-06-20</ResultPublished>
+</Result>
+</Results>
+</ResultLevel>
+<ResultLevel index="2"><NumberResults>31</NumberResults>
+<NCEALevel>2</NCEALevel>
+<Results><Result index="1"><Number>91207</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Dance 2.3 - Perform an ethnic or social dance to communicate understanding of the style</Title>
+<SubField>Dance</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2021-08-08</ResultPublished>
+</Result>
+<Result index="2"><Number>91098</Number>
+<Version>3</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>English 2.1 - Analyse specified aspect(s) of studied written text(s), supported by evidence</Title>
+<SubField>English</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2021-02-26</ResultPublished>
+</Result>
+<Result index="3"><Number>91101</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>English 2.4 - Produce a selection of crafted and controlled writing</Title>
+<SubField>English</SubField>
+<Credits>6</Credits>
+<CreditsPassed>6</CreditsPassed>
+<ResultPublished>2021-10-19</ResultPublished>
+</Result>
+<Result index="4"><Number>91106</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>English 2.9 - Form developed personal responses to independently read texts, supported by evidence</Title>
+<SubField>English</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2021-11-22</ResultPublished>
+</Result>
+<Result index="5"><Number>91235</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Health 2.1 - Analyse an adolescent health issue</Title>
+<SubField>Health and Physical Education</SubField>
+<Credits>5</Credits>
+<CreditsPassed>5</CreditsPassed>
+<ResultPublished>2021-02-16</ResultPublished>
+</Result>
+<Result index="6"><Number>91236</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Health 2.2 - Evaluate factors that influence people's ability to manage change</Title>
+<SubField>Health and Physical Education</SubField>
+<Credits>5</Credits>
+<CreditsPassed>5</CreditsPassed>
+<ResultPublished>2021-05-14</ResultPublished>
+</Result>
+<Result index="7"><Number>91239</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Health 2.5 - Analyse issues related to sexuality and gender to develop strategies for addressing the issues</Title>
+<SubField>Health and Physical Education</SubField>
+<Credits>5</Credits>
+<CreditsPassed>5</CreditsPassed>
+<ResultPublished>2021-08-11</ResultPublished>
+</Result>
+<Result index="8"><Number>91257</Number>
+<Version>3</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Mathematics and Statistics 2.2 - Apply graphical methods in solving problems</Title>
+<SubField>Mathematics</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2019-05-10</ResultPublished>
+</Result>
+<Result index="9"><Number>91259</Number>
+<Version>3</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Mathematics and Statistics 2.4 - Apply trigonometric relationships in solving problems</Title>
+<SubField>Mathematics</SubField>
+<Credits>3</Credits>
+<CreditsPassed>3</CreditsPassed>
+<ResultPublished>2019-09-04</ResultPublished>
+</Result>
+<Result index="10"><Number>91261</Number>
+<Version>3</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Mathematics and Statistics 2.6 - Apply algebraic methods in solving problems</Title>
+<SubField>Mathematics</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2019-03-11</ResultPublished>
+</Result>
+<Result index="11"><Number>91262</Number>
+<Version>3</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Mathematics and Statistics 2.7 - Apply calculus methods in solving problems</Title>
+<SubField>Mathematics</SubField>
+<Credits>5</Credits>
+<CreditsPassed>5</CreditsPassed>
+<ResultPublished>2019-03-11</ResultPublished>
+</Result>
+<Result index="12"><Number>91270</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Making Music 2.1 - Perform two substantial pieces of music as a featured soloist</Title>
+<SubField>Music</SubField>
+<Credits>6</Credits>
+<CreditsPassed>6</CreditsPassed>
+<ResultPublished>2021-11-19</ResultPublished>
+</Result>
+<Result index="13"><Number>91271</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Making Music 2.4 - Compose two substantial pieces of music</Title>
+<SubField>Music</SubField>
+<Credits>6</Credits>
+<CreditsPassed>6</CreditsPassed>
+<ResultPublished>2021-11-19</ResultPublished>
+</Result>
+<Result index="14"><Number>91272</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Making Music 2.3 - Demonstrate ensemble skills by performing a substantial piece of music as a member of a group</Title>
+<SubField>Music</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2021-08-24</ResultPublished>
+</Result>
+<Result index="15"><Number>91273</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Music Studies 2.8 - Devise an instrumentation for an ensemble</Title>
+<SubField>Music</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2021-03-24</ResultPublished>
+</Result>
+<Result index="16"><Number>91276</Number>
+<Version>3</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Music Studies 2.6 - Demonstrate knowledge of conventions in a range of music scores</Title>
+<SubField>Music</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2021-02-26</ResultPublished>
+</Result>
+<Result index="17"><Number>91278</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Music Studies 2.9 - Investigate an aspect of New Zealand music</Title>
+<SubField>Music</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2021-06-30</ResultPublished>
+</Result>
+<Result index="18"><Number>91153</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Biology 2.1 - Carry out a practical investigation in a biology context, with supervision</Title>
+<SubField>Science</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2021-07-01</ResultPublished>
+</Result>
+<Result index="19"><Number>91156</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Biology 2.4 - Demonstrate understanding of life processes at the cellular level</Title>
+<SubField>Science</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2021-02-24</ResultPublished>
+</Result>
+<Result index="20"><Number>91157</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Biology 2.5 - Demonstrate understanding of genetic variation and change</Title>
+<SubField>Science</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2021-02-24</ResultPublished>
+</Result>
+<Result index="21"><Number>91158</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Biology 2.6 - Investigate a pattern in an ecological community, with supervision</Title>
+<SubField>Science</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2021-03-22</ResultPublished>
+</Result>
+<Result index="22"><Number>91159</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Biology 2.7 - Demonstrate understanding of gene expression</Title>
+<SubField>Science</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2021-02-24</ResultPublished>
+</Result>
+<Result index="23"><Number>91164</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Chemistry 2.4 - Demonstrate understanding of bonding, structure, properties and energy changes</Title>
+<SubField>Science</SubField>
+<Credits>5</Credits>
+<CreditsPassed>5</CreditsPassed>
+<ResultPublished>2021-02-22</ResultPublished>
+</Result>
+<Result index="24"><Number>91165</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Chemistry 2.5 - Demonstrate understanding of the properties of selected organic compounds</Title>
+<SubField>Science</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2021-02-22</ResultPublished>
+</Result>
+<Result index="25"><Number>91166</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Chemistry 2.6 - Demonstrate understanding of chemical reactivity</Title>
+<SubField>Science</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2021-02-22</ResultPublished>
+</Result>
+<Result index="26"><Number>91167</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Chemistry 2.7 - Demonstrate understanding of oxidation-reduction</Title>
+<SubField>Science</SubField>
+<Credits>3</Credits>
+<CreditsPassed>3</CreditsPassed>
+<ResultPublished>2021-08-12</ResultPublished>
+</Result>
+<Result index="27"><Number>91168</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Physics 2.1 - Carry out a practical physics investigation that leads to a non-linear mathematical relationship</Title>
+<SubField>Science</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2021-06-17</ResultPublished>
+</Result>
+<Result index="28"><Number>91170</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Physics 2.3 - Demonstrate understanding of waves</Title>
+<SubField>Science</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2021-02-22</ResultPublished>
+</Result>
+<Result index="29"><Number>91171</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Physics 2.4 - Demonstrate understanding of mechanics</Title>
+<SubField>Science</SubField>
+<Credits>6</Credits>
+<CreditsPassed>6</CreditsPassed>
+<ResultPublished>2021-02-22</ResultPublished>
+</Result>
+<Result index="30"><Number>91172</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Physics 2.5 - Demonstrate understanding of atomic and nuclear physics</Title>
+<SubField>Science</SubField>
+<Credits>3</Credits>
+<CreditsPassed>3</CreditsPassed>
+<ResultPublished>2021-06-23</ResultPublished>
+</Result>
+<Result index="31"><Number>91173</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Physics 2.6 - Demonstrate understanding of electricity and electromagnetism</Title>
+<SubField>Science</SubField>
+<Credits>6</Credits>
+<CreditsPassed>6</CreditsPassed>
+<ResultPublished>2021-02-22</ResultPublished>
+</Result>
+</Results>
+</ResultLevel>
+<ResultLevel index="3"><NumberResults>19</NumberResults>
+<NCEALevel>1</NCEALevel>
+<Results><Result index="1"><Number>90052</Number>
+<Version>5</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>English 1.4 - Produce creative writing</Title>
+<SubField>English</SubField>
+<Credits>3</Credits>
+<CreditsPassed>3</CreditsPassed>
+<ResultPublished>2020-09-03</ResultPublished>
+</Result>
+<Result index="2"><Number>90849</Number>
+<Version>3</Version>
+<Grade>Achieved</Grade>
+<Title>English 1.1 - Show understanding of specified aspect(s) of studied written text(s), using supporting evidence</Title>
+<SubField>English</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2020-03-06</ResultPublished>
+</Result>
+<Result index="3"><Number>90850</Number>
+<Version>4</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>English 1.2 - Show understanding of specified aspect(s) of studied visual or oral text(s), using supporting evidence</Title>
+<SubField>English</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2020-03-06</ResultPublished>
+</Result>
+<Result index="4"><Number>90851</Number>
+<Version>2</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>English 1.3 - Show understanding of significant aspects of unfamiliar written text(s) through close reading, using supporting evidence</Title>
+<SubField>English</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2020-03-06</ResultPublished>
+</Result>
+<Result index="5"><Number>90852</Number>
+<Version>2</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>English 1.8 - Explain significant connection(s) across texts, using supporting evidence</Title>
+<SubField>English</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2020-06-12</ResultPublished>
+</Result>
+<Result index="6"><Number>90971</Number>
+<Version>3</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Health 1.1 - Take action to enhance an aspect of personal well-being</Title>
+<SubField>Health and Physical Education</SubField>
+<Credits>3</Credits>
+<CreditsPassed>3</CreditsPassed>
+<ResultPublished>2020-05-25</ResultPublished>
+</Result>
+<Result index="7"><Number>90973</Number>
+<Version>3</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Health 1.4 - Demonstrate understanding of interpersonal skills used to enhance relationships</Title>
+<SubField>Health and Physical Education</SubField>
+<Credits>5</Credits>
+<CreditsPassed>5</CreditsPassed>
+<ResultPublished>2020-06-26</ResultPublished>
+</Result>
+<Result index="8"><Number>90974</Number>
+<Version>4</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Health 1.5 - Demonstrate understanding of strategies for promoting positive sexuality</Title>
+<SubField>Health and Physical Education</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2020-11-19</ResultPublished>
+</Result>
+<Result index="9"><Number>90975</Number>
+<Version>3</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Health 1.6 - Demonstrate understanding of issues to make health-enhancing decisions in drug-related situations</Title>
+<SubField>Health and Physical Education</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2020-03-06</ResultPublished>
+</Result>
+<Result index="10"><Number>91097</Number>
+<Version>3</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Health 1.3 - Demonstrate understanding of ways in which well-being can change and strategies to support well-being</Title>
+<SubField>Health and Physical Education</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2020-07-29</ResultPublished>
+</Result>
+<Result index="11"><Number>91027</Number>
+<Version>4</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Mathematics and Statistics 1.2 - Apply algebraic procedures in solving problems</Title>
+<SubField>Mathematics</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2018-05-09</ResultPublished>
+</Result>
+<Result index="12"><Number>91028</Number>
+<Version>3</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Mathematics and Statistics 1.3 - Investigate relationships between tables, equations and graphs</Title>
+<SubField>Mathematics</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2018-05-09</ResultPublished>
+</Result>
+<Result index="13"><Number>91029</Number>
+<Version>3</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Mathematics and Statistics 1.4 - Apply linear algebra in solving problems</Title>
+<SubField>Mathematics</SubField>
+<Credits>3</Credits>
+<CreditsPassed>3</CreditsPassed>
+<ResultPublished>2018-11-07</ResultPublished>
+</Result>
+<Result index="14"><Number>91030</Number>
+<Version>3</Version>
+<Grade>Achieved</Grade>
+<Title>Mathematics and Statistics 1.5 - Apply measurement in solving problems</Title>
+<SubField>Mathematics</SubField>
+<Credits>3</Credits>
+<CreditsPassed>3</CreditsPassed>
+<ResultPublished>2018-08-07</ResultPublished>
+</Result>
+<Result index="15"><Number>91031</Number>
+<Version>4</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Mathematics and Statistics 1.6 - Apply geometric reasoning in solving problems</Title>
+<SubField>Mathematics</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2018-05-09</ResultPublished>
+</Result>
+<Result index="16"><Number>91090</Number>
+<Version>3</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Music 1.1 - Perform two pieces of music as a featured soloist</Title>
+<SubField>Music</SubField>
+<Credits>6</Credits>
+<CreditsPassed>6</CreditsPassed>
+<ResultPublished>2020-09-03</ResultPublished>
+</Result>
+<Result index="17"><Number>91091</Number>
+<Version>3</Version>
+<Grade>Achieved with Excellence</Grade>
+<Title>Music 1.2 - Demonstrate ensemble skills through performing a piece of music as a member of a group</Title>
+<SubField>Music</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2020-09-03</ResultPublished>
+</Result>
+<Result index="18"><Number>91092</Number>
+<Version>3</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Music 1.3 - Compose two original pieces of music</Title>
+<SubField>Music</SubField>
+<Credits>6</Credits>
+<CreditsPassed>6</CreditsPassed>
+<ResultPublished>2020-10-20</ResultPublished>
+</Result>
+<Result index="19"><Number>91094</Number>
+<Version>3</Version>
+<Grade>Achieved with Merit</Grade>
+<Title>Music 1.5 - Demonstrate knowledge of conventions used in music scores</Title>
+<SubField>Music</SubField>
+<Credits>4</Credits>
+<CreditsPassed>4</CreditsPassed>
+<ResultPublished>2020-03-06</ResultPublished>
+</Result>
+</Results>
+</ResultLevel>
+</ResultLevels>
+
+</StudentResultsResults>

@@ -1,5 +1,7 @@
 from cryptography.fernet import Fernet
 import os.path
+import os
+from kamarapi import *
 
 
 class local_encryption():
@@ -14,10 +16,8 @@ class local_encryption():
             with open("key.key", "wb") as f:
                 f.write(self.key)
 
-    def encrypt(self):
+    def encrypt(self, file_data):
         f = Fernet(self.key)
-        with open("secret.dll", "rb") as file:
-            file_data = file.read()
         encrypted_data = f.encrypt(file_data)
         with open("secret.dll", "wb") as file:
             file.write(encrypted_data)
@@ -30,5 +30,27 @@ class local_encryption():
 
 
 if __name__ == "__main__":
-    s = local_encryption()
-    print(s.decryptlogins())
+    cryt = local_encryption()
+    while True:
+        if input("New user? [y/n]") == "y":
+            temp1 = input("what school u goto? \n").lower() + "\n"
+            for i in range(0, 50):
+                print("")
+            temp1 += input("username : \n").lower() + "\n"
+            for i in range(0, 50):
+                print("")
+            temp1 += input("password : \n")
+            for i in range(0, 50):
+                print("")
+            cryt.encrypt(temp1.encode("utf-8"))
+            break
+        else:
+            with open("secret.dll", "wb") as file:
+                file.write(
+                    b"gAAAAABjD9uqq5hAe6_bgLyH7j-GZ-h6rcw8aRmhaXpGWKVLg-vAn-p8gTOdP-dOcgMsVyHkENnUqzF2CY2g7ZcHTZYejUrEYG579TgegzKroBOHjWMXU9Y=")
+            break
+
+    cred_details = cryt.decryptlogins().split("\n")
+    k = kamar_api(cred_details[0], cred_details[1], cred_details[2])
+    results = k.getresults()
+    print("Youre Rank score is : ", results)
