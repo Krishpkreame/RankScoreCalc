@@ -1,34 +1,7 @@
-from cryptography.fernet import Fernet
-import os.path
-import os
+import re
 from kamarapi import *
-
-
-class local_encryption():
-    def __init__(self):
-
-        if os.path.exists('secret.dll'):
-            print("File exists")
-            with open('key.key', 'rb') as f:
-                self.key = f.read()
-        else:
-            self.key = Fernet.generate_key()
-            with open("key.key", "wb") as f:
-                f.write(self.key)
-
-    def encrypt(self, file_data):
-        f = Fernet(self.key)
-        encrypted_data = f.encrypt(file_data)
-        with open("secret.dll", "wb") as file:
-            file.write(encrypted_data)
-
-    def decryptlogins(self):
-        f = Fernet(self.key)
-        with open("secret.dll", "rb") as file:
-            encrypted_data = file.read()
-        return f.decrypt(encrypted_data).decode("utf-8")
-
-
+from encrypt import local_encryption
+from filterapi import filter_kamar
 if __name__ == "__main__":
     cryt = local_encryption()
     while True:
@@ -50,7 +23,20 @@ if __name__ == "__main__":
                     b"gAAAAABjD9uqq5hAe6_bgLyH7j-GZ-h6rcw8aRmhaXpGWKVLg-vAn-p8gTOdP-dOcgMsVyHkENnUqzF2CY2g7ZcHTZYejUrEYG579TgegzKroBOHjWMXU9Y=")
             break
 
-    cred_details = cryt.decryptlogins().split("\n")
+    cred_details = cryt.decryptlogins()
     k = kamar_api(cred_details[0], cred_details[1], cred_details[2])
     results = k.getresults()
-    print("Youre Rank score is : ", results)
+    print("-----------\n", results, "\n-------------")
+    print(k.student_id, " :\n", len(results))
+
+    filterObj = filter_kamar(open("uestandards.json").read())
+    sortedKamar = filterObj.filter_results(results)
+    # print(sortedKamar)
+    sum = 0
+    for i in sortedKamar.values():
+        print(i, "\n\n")
+        for x in i.keys():
+            if x == "subject_credits_earned":
+                continue
+            sum += i[x][2]
+    print("rankscore: ", sum)
