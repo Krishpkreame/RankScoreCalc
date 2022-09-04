@@ -1,3 +1,4 @@
 *.key
 *.dll
 tempCodeRunnerFile.py
+*.pyc
