@@ -1,55 +1,68 @@
+import re
 import xmltodict
 import requests
 
 
 class kamar_api():
-    def __init__(self, school, user, pswd):
-        self.url = "https://kamarportal.{}.school.nz/api/api.php".format(
+    def getauthkey(school, user, pswd):
+        url = "https://kamarportal.{}.school.nz/api/api.php".format(
             school)
 
-        self.headers = {
+        headers = {
             'Content-Type': 'application/x-www-form-urlencoded',
             'User-Agent': 'KAMAR API Demo',
             'Origin': 'file://',
             'X-Requested-With': 'nz.co.KAMAR'
         }
 
-        self.response = requests.request(
+        response = requests.request(
             "POST",
-            self.url,
-            headers=self.headers,
+            url,
+            headers=headers,
             data='Command=Logon&Key=vtku&Username={0}&Password={1}'.format(user, pswd))
 
-        self.infodict = xmltodict.parse(self.response.text)["LogonResults"]
+        infodict = xmltodict.parse(response.text)["LogonResults"]
 
-        self.key = self.infodict["Key"]
-        self.student_id = self.infodict["CurrentStudent"]
+        if "Success" not in infodict:
+            return infodict
 
-        print(self.infodict)  # ! Remove
+        if infodict["Success"] == "YES":
+            print(infodict)
+            return {"AccessLevel": infodict["AccessLevel"], "id": infodict["CurrentStudent"], "key": infodict["Key"]}
 
-    def getresults(self):
-        self.payload = "Command=GetStudentResults" + "&Key=" + \
-            self.key + "&StudentID=" + self.student_id
+    def getresults(school, student_id, authkey):
+        url = "https://kamarportal.{}.school.nz/api/api.php".format(
+            school)
 
-        self.response = requests.request(
-            "POST", self.url, headers=self.headers, data=self.payload)
-        self.unfilter = xmltodict.parse(self.response.text)
-        self.results = {}
-        for i in self.unfilter["StudentResultsResults"]["ResultLevels"]["ResultLevel"]:
+        headers = {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'User-Agent': 'KAMAR API Demo',
+            'Origin': 'file://',
+            'X-Requested-With': 'nz.co.KAMAR'
+        }
+
+        payload = "Command=GetStudentResults" + "&Key=" + \
+            authkey + "&StudentID=" + student_id
+
+        response = requests.request(
+            "POST", url, headers=headers, data=payload)
+        unfilter = xmltodict.parse(response.text)
+        results = {}
+        for i in unfilter["StudentResultsResults"]["ResultLevels"]["ResultLevel"]:
             if i['NCEALevel'] == "3":
-                self.level3results = i["Results"]["Result"]
-                for y in self.level3results:
+                level3results = i["Results"]["Result"]
+                for y in level3results:
                     if y["Grade"] == "Not Achieved":
-                        self.results.update(
+                        results.update(
                             {y["Number"]: [0, "Not Achieved", 0, y["Title"]]})
                     elif y["Grade"] == "Achieved":
-                        self.results.update(
+                        results.update(
                             {y["Number"]: [int(y["CreditsPassed"]), "Achieved", int(y["CreditsPassed"]) * 2, y["Title"]]})
                     elif y["Grade"] == "Achieved with Merit":
-                        self.results.update({
+                        results.update({
                             y["Number"]: [int(y["CreditsPassed"]), "Merit", int(y["CreditsPassed"]) * 3, y["Title"]]})
                     elif y["Grade"] == "Achieved with Excellence":
-                        self.results.update({
+                        results.update({
                             y["Number"]: [int(y["CreditsPassed"]), "Excellence", int(y["CreditsPassed"]) * 4, y["Title"]]})
 
-        return self.results
+        return results
