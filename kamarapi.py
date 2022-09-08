@@ -28,7 +28,7 @@ class kamar_api():
 
         if infodict["Success"] == "YES":
             print(infodict)
-            return {"AccessLevel": infodict["AccessLevel"], "id": infodict["CurrentStudent"], "key": infodict["Key"]}
+            return {"AccessLevel": 1, "id": infodict["CurrentStudent"], "key": infodict["Key"]}
 
     def getresults(school, student_id, authkey):
         url = "https://kamarportal.{}.school.nz/api/api.php".format(
