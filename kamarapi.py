@@ -80,9 +80,7 @@ class kamar_api():
         "Tongan": [91679, 91680, 91681, 91682, 91683]
     }
 
-    def getauthkey(school, user, pswd):
-        url = "https://kamarportal.{}.school.nz/api/api.php".format(
-            school)
+    def getauthkey(url, user, pswd):
 
         headers = {
             'Content-Type': 'application/x-www-form-urlencoded',
@@ -105,10 +103,7 @@ class kamar_api():
         if infodict["Success"] == "YES":
             return {"AccessLevel": 1, "id": infodict["CurrentStudent"], "key": infodict["Key"]}
 
-    def getresults(school, student_id, authkey):
-        url = "https://kamarportal.{}.school.nz/api/api.php".format(
-            school)
-
+    def getresults(url, student_id, authkey):
         headers = {
             'Content-Type': 'application/x-www-form-urlencoded',
             'User-Agent': 'KAMAR API Demo',

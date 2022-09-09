@@ -20,7 +20,7 @@ class authkey(Resource):
         print("AUTHKEY -\npost request received")
         print("data :\n", data)
         auth = kamar_api.getauthkey(
-            data['school'], data['username'], data['password'])
+            data['schoolurl'], data['username'], data['password'])
         print("--------------------------\n",
               "Returning :\n", auth)
         return auth
@@ -35,7 +35,7 @@ class kamarresults(Resource):
         print("RESULTS -\npost request received")
         print("data :\n", data)
         results = kamar_api.getresults(
-            data['school'], data['id'], data['key'])
+            data['schoolurl'], data['id'], data['key'])
         print("--------------------------\n",
               "Returning :\n", results)
         return results
