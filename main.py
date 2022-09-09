@@ -17,7 +17,6 @@ class authkey(Resource):
 
     def post(self):
         data = request.get_json()
-        print(type(data), data, "Auth key")
         auth = kamar_api.getauthkey(
             data['school'], data['username'], data['password'])
         return auth
@@ -29,7 +28,6 @@ class kamarresults(Resource):
 
     def post(self):
         data = request.get_json()
-        print(type(data), data, "Results")
         results = kamar_api.getresults(
             data['school'], data['id'], data['key'])
         return results

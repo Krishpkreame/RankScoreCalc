@@ -103,7 +103,6 @@ class kamar_api():
             return infodict
 
         if infodict["Success"] == "YES":
-            print(infodict)
             return {"AccessLevel": 1, "id": infodict["CurrentStudent"], "key": infodict["Key"]}
 
     def getresults(school, student_id, authkey):
@@ -150,6 +149,4 @@ class kamar_api():
                                     rankpergrade(
                                         y["Grade"], y["CreditsPassed"]),
                                     y["Title"]]})
-
-        print(results)
         return results
