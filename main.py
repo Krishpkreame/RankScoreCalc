@@ -17,22 +17,26 @@ class authkey(Resource):
 
     def post(self):
         data = request.get_json()
-        print(type(data), data)
-        school = data['school']
-        user = data['username']
-        pswd = data['password']
-        auth = kamar_api.getauthkey(school, user, pswd)
+        print(type(data), data, "Auth key")
+        auth = kamar_api.getauthkey(
+            data['school'], data['username'], data['password'])
         return auth
 
 
-class get_posts_test(Resource):
-    def get(self, num):
-        r = requests.get('https://jsonplaceholder.typicode.com/posts')
-        return json.loads(r.text)
+class kamarresults(Resource):
+    def get(self):
+        return {'invalid auth': 'no auth key provided / invalid auth key'}
+
+    def post(self):
+        data = request.get_json()
+        print(type(data), data, "Results")
+        results = kamar_api.getresults(
+            data['school'], data['id'], data['key'])
+        return results
 
 
-api.add_resource(authkey, '/api/v1')
-api.add_resource(get_posts_test, '/getpoststest/<int:num>')
+api.add_resource(authkey, '/api/v1/auth')
+api.add_resource(kamarresults, '/api/v1/results')
 
 if __name__ == '__main__':
     app.run(debug=True, threaded=True)
