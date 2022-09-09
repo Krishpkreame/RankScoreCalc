@@ -21,6 +21,8 @@ class authkey(Resource):
         print("data :\n", data)
         auth = kamar_api.getauthkey(
             data['school'], data['username'], data['password'])
+        print("--------------------------\n",
+              "Returning :\n", auth)
         return auth
 
 
@@ -29,11 +31,13 @@ class kamarresults(Resource):
         return {'invalid auth': 'no auth key provided / invalid auth key'}
 
     def post(self):
+        data = request.get_json()
         print("RESULTS -\npost request received")
         print("data :\n", data)
-        data = request.get_json()
         results = kamar_api.getresults(
             data['school'], data['id'], data['key'])
+        print("--------------------------\n",
+              "Returning :\n", results)
         return results
 
 
