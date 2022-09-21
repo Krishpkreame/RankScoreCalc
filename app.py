@@ -1,9 +1,7 @@
 from kamarapi import *
-from flask import Flask, request, jsonify
+from flask import Flask, request
 from flask_restful import Resource, Api
-from flask_cors import CORS, cross_origin
-import requests
-import json
+from flask_cors import CORS
 
 app = Flask(__name__)
 api = Api(app)

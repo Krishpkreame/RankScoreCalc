@@ -3,7 +3,7 @@ import requests
 
 
 class kamar_api():
-    global __uestandards
+    global __uestandards, headers
     __uestandards = {
         "Accounting": [91404, 91405, 91406, 91407, 91408, 91409],
         "Agriculture & Horticulture": [91528, 91529, 91530, 91531, 91532],
@@ -79,16 +79,14 @@ class kamar_api():
         ],
         "Tongan": [91679, 91680, 91681, 91682, 91683]
     }
+    headers = {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'User-Agent': 'KAMAR API Demo',
+        'Origin': 'file://',
+        'X-Requested-With': 'nz.co.KAMAR'
+    }
 
     def getauthkey(url, user, pswd):
-
-        headers = {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            'User-Agent': 'KAMAR API Demo',
-            'Origin': 'file://',
-            'X-Requested-With': 'nz.co.KAMAR'
-        }
-
         response = requests.request(
             "POST",
             url,
@@ -97,27 +95,15 @@ class kamar_api():
 
         infodict = xmltodict.parse(response.text)["LogonResults"]
 
+        # Garbage collection
+        del response
+
         if "Success" not in infodict:
             return infodict
         elif infodict["Success"] == "YES":
             return {"AccessLevel": '1', "id": infodict["CurrentStudent"], "key": infodict["Key"]}
 
     def getresults(url, student_id, authkey):
-        headers = {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            'User-Agent': 'KAMAR API Demo',
-            'Origin': 'file://',
-            'X-Requested-With': 'nz.co.KAMAR'
-        }
-
-        payload = "Command=GetStudentResults" + "&Key=" + \
-            authkey + "&StudentID=" + student_id
-
-        response = requests.request(
-            "POST", url, headers=headers, data=payload)
-        unfilter = xmltodict.parse(response.text)
-        results = {}
-
         def rankpergrade(grade, credit):
             if grade == "Achieved":
                 return int(credit) * 2
@@ -128,19 +114,39 @@ class kamar_api():
             else:
                 return 0
 
-        for i in unfilter["StudentResultsResults"]["ResultLevels"]["ResultLevel"]:
-            if i['NCEALevel'] == "3":
-                level3results = i["Results"]["Result"]
-                for y in level3results:
-                    for x in __uestandards:
-                        if(int(y["Number"]) in __uestandards[x]):
-                            if x not in results:
-                                results.update({x: {}})
-                            results[x].update({
-                                y["Number"]: [
-                                    int(y["CreditsPassed"]),
-                                    y["Grade"],
-                                    rankpergrade(
-                                        y["Grade"], y["CreditsPassed"]),
-                                    y["Title"]]})
+        response = requests.request(
+            "POST",
+            url,
+            headers=headers,
+            data="Command=GetStudentResults&Key={0}&StudentID={1}".format(
+                authkey,
+                student_id))
+        all_years_result = xmltodict.parse(
+            response.text)["StudentResultsResults"]["ResultLevels"]["ResultLevel"]
+
+        level3results = None
+        for crnt_year in all_years_result:
+            if crnt_year['NCEALevel'] == "3":
+                level3results = crnt_year["Results"]["Result"]
+
+        if (not level3results):
+            raise ValueError("No Level 3 results")
+
+        # Garbage collection
+        del response
+        del all_years_result
+
+        results = {}
+        for y in level3results:
+            for x in __uestandards:
+                if (int(y["Number"]) in __uestandards[x]):
+                    if x not in results:
+                        results.update({x: {}})
+                    results[x].update({
+                        y["Number"]: [
+                            int(y["CreditsPassed"]),
+                            y["Grade"],
+                            rankpergrade(
+                                y["Grade"], y["CreditsPassed"]),
+                            y["Title"]]})
         return results
