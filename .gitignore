@@ -1,6 +1,1 @@
-*.key
-*.dll
-tempCodeRunnerFile.py
-*.pyc
-results.json
-tester.py
+/node_modules
