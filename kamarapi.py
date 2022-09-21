@@ -99,9 +99,8 @@ class kamar_api():
 
         if "Success" not in infodict:
             return infodict
-
-        if infodict["Success"] == "YES":
-            return {"AccessLevel": 1, "id": infodict["CurrentStudent"], "key": infodict["Key"]}
+        elif infodict["Success"] == "YES":
+            return {"AccessLevel": '1', "id": infodict["CurrentStudent"], "key": infodict["Key"]}
 
     def getresults(url, student_id, authkey):
         headers = {

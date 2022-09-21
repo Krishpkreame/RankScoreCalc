@@ -2,3 +2,5 @@
 *.dll
 tempCodeRunnerFile.py
 *.pyc
+results.json
+tester.py
